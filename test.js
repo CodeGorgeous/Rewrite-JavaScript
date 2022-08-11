@@ -5,5 +5,5 @@ const obj = {
     }
 };
 obj.__proto__.a = 1;
-const obj2 = Object.values(obj);
+const obj2 = Object.entries(obj);
 console.dir(obj2);
