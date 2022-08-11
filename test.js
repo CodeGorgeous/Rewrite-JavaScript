@@ -5,6 +5,5 @@ const obj = {
     }
 };
 obj.__proto__.a = 1;
-console.log(new String(1));
-const obj2 = Object.keys(1);
+const obj2 = Object.values(obj);
 console.dir(obj2);
