@@ -1,9 +1,3 @@
-const obj = {
-    name: "CodeGorgeous",
-    song() {
-        console.log("Hello World!");
-    }
-};
-obj.__proto__.a = 1;
-const obj2 = Object.entries(obj);
+const arr = [["a", 1], ["b", 2]]
+const obj2 = Object.fromEntries(arr);
 console.dir(obj2);

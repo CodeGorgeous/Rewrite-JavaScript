@@ -3,6 +3,7 @@ import assign from "./static/assign.js";
 import keys from "./static/keys.js";
 import values from "./static/values.js";
 import entries from "./static/entries.js";
+import fromEntries from "./static/fromEntries.js";
 
 Object.prototype.hasOwnProperty = hasOwnProperty;
 Object.assign = assign;
@@ -15,7 +16,8 @@ const staticAttributes= [
     assign,
     keys,
     values,
-    entries
+    entries,
+    fromEntries
 ];
 prototypeAttributes.forEach(attribute => {
     Object.prototype[attribute.name] = attribute;
